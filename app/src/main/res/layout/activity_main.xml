@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/playbac"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent">
+        </ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#D8474640"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="match_parent">
+    </View>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:elevation="50dp"
+        android:layout_width="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="#FAF5F5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/arimo_bold"
+        android:gravity="center"
+        android:text="Let's Play Quiz \n Earn Money"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="50sp"
+        android:id="@+id/startbtn"
+        android:background="@drawable/circle_back_yellow"
+        android:layout_width="200dp"
+        android:text="Start"
+        android:fontFamily="@font/arimo_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="200dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
